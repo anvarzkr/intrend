@@ -1,0 +1,9 @@
+- if @trends.count > 0
+  h2 Список трендов категории #{@category.title}:
+  - @trends.each do |trend|
+    .trend.background
+      = link_to trend.title, trend_path(trend), class: 'title'
+      .description
+        = trend.description
+- else
+  h2 Нет трендов

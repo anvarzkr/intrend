@@ -1,0 +1,13 @@
+h2 Все тренды
+
+- if @trends.count > 0
+  - @trends.each do |trend|
+    .trend
+      = link_to trend.title, trend_path(trend), class: 'title'
+      .description
+        = trend.description
+      .trend-category
+        b Категория:
+        =< link_to trend.category.title, category_path(trend.category)
+- else
+  h2 Нет трендов

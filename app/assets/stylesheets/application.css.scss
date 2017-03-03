@@ -1,0 +1,186 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+@import "font-awesome";
+
+@import "bootstrap-sprockets";
+
+@import "bootswatch/readable/variables";
+
+/*@import "responsive-align.css";*/
+
+@import "bootstrap";
+
+@import "bootswatch/readable/bootswatch";
+
+@import "bootstrap_and_overrides";
+
+@import "*";
+
+@font-face {
+  font-family: 'Circe';
+  src: url("/assets/circe.eot");
+  src: url("/assets/circe.eot?#iefix") format("embedded-opentype"), url("/assets/circe.woff") format("woff"), url("/assets/circe.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 40px 0;
+  margin: 60px 0;
+  padding-top: 60px;
+  // background-image: image-url("main.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
+
+  font-family: 'Circe', sans-serif !important;
+}
+
+.f-right {
+  float: right;
+}
+.f-left {
+  float: left;
+}
+
+.validation-errors {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f2dede;
+
+  h1, h2, h3, h4 {margin-top: 5px;}
+}
+
+.background {
+  background-color: #f5f7f8;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+a:hover {text-decoration: none;}
+
+h1 {font-size: 30px;}
+h2 {font-size: 24px;}
+h3 {font-size: 20px;}
+h4 {font-size: 16px;}
+
+table {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+
+  thead {
+    th {
+      color: #b0b0b0;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  tbody {
+    tr {
+      margin: 10px;
+      border-bottom: 1px solid #eee;
+
+      td {
+        padding: 20px;
+        .image {
+          width: 60px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.heading {
+  h1.title {font-size: 30px;}
+  p.subtitle {
+    font-size: 18px;
+  }
+  margin-bottom: 30px;
+}
+
+.info-block {
+  background-color: #f5f7f8;
+  font-size: 16px;
+  color: #616161;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.brand-logo {
+  position: relative;
+  height: 50px;
+  top: -10px;
+}
+
+#events_search_mobile {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 12px;
+  margin-right: 5px;
+}
+
+html#map-html {
+  height: 100%;
+
+  body {
+    padding: 66px 0 50px 0;
+    margin: 0;
+  }
+}
+
+// #messages-city {
+//   height: 300px;
+//   width: 200px;
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   background-color: #fff;
+//   z-index: 100;
+// }
+
+footer {
+  padding-top: 15px;
+  // border-top: 1px solid #006687;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  color: #4582EC;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  overflow:hidden;
+  font-weight: 300;
+
+  a {
+    color: #4582EC;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+      color: #4582EC;
+    }
+  }
+}

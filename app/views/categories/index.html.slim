@@ -1,0 +1,10 @@
+- if @categories.count > 0
+  h2 Список категорий:
+  - @categories.each do |cat|
+    .category.background
+      => link_to cat.title, category_path(cat), class: 'title'
+      | (#{cat.trends.count})
+      .description
+        = cat.description
+- else
+  h2 Нет категорий
